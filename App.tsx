@@ -6,10 +6,16 @@ import Gallery from './components/Gallery';
 import AiWishHelper from './components/AiWishHelper';
 import GiftSection from './components/GiftSection';
 import Footer from './components/Footer';
+import MusicPlayer from './components/MusicPlayer';
+import FallingPetals from './components/FallingPetals';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative">
+      {/* Global Effects */}
+      <FallingPetals />
+      <MusicPlayer />
+
       <Hero />
       <OurStory />
       <div id="events">
@@ -21,8 +27,6 @@ function App() {
       </div>
       <GiftSection />
       <Footer />
-      
-      {/* Sticky Music Control / Navigation could go here, keeping it simple for now */}
     </div>
   );
 }
