@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đám Cưới Tuấn Anh & Kiều Anh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              script: ['"Great Vibes"', 'cursive'],
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Quicksand"', 'sans-serif'],
+            },
+            colors: {
+              wedding: {
+                50: '#fdf4f4',
+                100: '#ffe4e6',
+                200: '#fecdd3',
+                300: '#fda4af',
+                400: '#fb7185',
+                500: '#f43f5e',
+                600: '#e11d48',
+                gold: '#D4AF37',
+                'gold-light': '#F3E5AB',
+              }
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'fade-in-up': 'fadeInUp 1s ease-out forwards',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-15px)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(30px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #fff0f5; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #fb7185; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #e11d48; 
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+      .text-glow {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-wedding-50 text-gray-800 font-sans antialiased overflow-x-hidden selection:bg-wedding-200 selection:text-wedding-900">
+    <div id="root"></div>
+  </body>
+</html>
